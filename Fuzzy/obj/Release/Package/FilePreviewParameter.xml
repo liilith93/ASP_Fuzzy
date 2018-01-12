@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/FuzzySite" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\mgr_proby\\Fuzzy\\Fuzzy\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\mgr_proby\\Fuzzy\\Fuzzy\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DBConnect-Web.config Connection String" description="" value="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\mgr_proby\Fuzzy\FuzzySystemDB.mdf;Integrated Security=True;Connect Timeout=30" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\mgr_proby\\Fuzzy\\Fuzzy\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBConnect']/@connectionString" />
+  </parameter>
+</parameters>

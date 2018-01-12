@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="afed2dcc-5a0d-42ee-898c-4fa82505a750"
+  name="MGR_site"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="91f0cc48-91b8-41a3-a4d0-491d38393eed"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMGR_site"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="41642812-8f69-4257-b520-d21cd0a71d30">
+      <profileInstance
+        Id="6837c994-86ab-4f0c-b21c-6f551b2370f0"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="73be743e-c825-4798-87c3-c938667ba6f6"
+        name="Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c13054b9-9566-4538-824a-87c0a16c0f21"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8170d4f4-7cf6-4234-ade1-a43207a188d5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="371b1cd4-527e-402e-bb30-c029caefc005">
+                <propertyInstance
+                  Id="a787c642-17ed-4840-9176-578d39ddf258"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="faa8347e-be03-449f-adf7-6082f755212b">
+                <propertyInstance
+                  Id="03f53333-4f07-4f14-b81f-37ef78d675b4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1db26296-a3b0-4922-937c-51e0153ed45a">
+                <propertyInstance
+                  Id="7637d4e2-9956-46dc-9eb9-6617e56cf3b0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fd200cd-0ad1-4caf-9cd5-cea2f542f5b3">
+                <propertyInstance
+                  Id="3899678a-0c8f-44db-a978-03b6b6f705ea"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef84e20f-68ca-4063-aa5b-c37ea8324641">
+                <propertyInstance
+                  Id="702db3b3-c6de-44f8-9a5f-3950a5248106"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="52bbb4b8-177d-4e28-bcc9-8cb4d6f6c248"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bde9193b-9e27-4323-9217-23269ff2718c"
+              LastKnownName="Page"
+              LastKnownLocation="Package3_2323.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="303b71be-18e8-4bd8-bc75-7168011a5e0b"
+            name="Accept"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6a18083d-4287-4f9f-bd31-19a20b42bde8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3DAccept"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c8163ce-851e-48bd-a4f4-b1a3a4a611f0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cfbb895-f62c-4caa-9f4d-9acf6ff55f5e">
+                    <propertyInstance
+                      Id="67a2b26e-68cb-4e66-bcb0-5b2c31e80a6c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30514fc8-3b17-4e7e-b7ad-375d0270973e">
+                    <propertyInstance
+                      Id="958120af-c053-4456-a63b-5dda413304b2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c889a71-c03d-45c8-9aa6-bdc59431eac3">
+                    <propertyInstance
+                      Id="6d1799ff-1276-48fe-a486-43e49b3f6191"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a92f40bf-3616-43b5-8bd3-c05802158fec">
+                    <propertyInstance
+                      Id="1df5b2db-30c9-4978-b01b-191a8a545d11"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="024f3749-c391-40f3-9212-bb2dd1d9c76f">
+                    <propertyInstance
+                      Id="bd14335f-efe1-4ac0-9844-94166ce4d8c0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f831234d-8e2d-49ee-a13d-d2734819cb45"
+                LastKnownName="Button"
+                LastKnownLocation="Package7_2323.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e4df7e9-42d0-4d28-8bed-04298e0f7227"
+            name="auto"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="553ee4d3-83c3-4d26-9680-c1313098a048"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3Dauto"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a3fde7c8-1c8e-4d1b-8089-d2fdfc4ade21"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7200fe66-f91b-49bb-82fd-8ead89547dd4">
+                    <propertyInstance
+                      Id="c480b1e5-c28f-48d9-b49a-ea6b00f35df3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ca5b90e-fabf-4934-9053-8d4fad279d2e">
+                    <propertyInstance
+                      Id="38f892f4-154d-46c6-bbff-6411493abc3d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05f4f089-f5a9-46b8-a99e-3b5f62f1bddc">
+                    <propertyInstance
+                      Id="c540f223-798f-47b8-874f-deec4123a589"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faa3eb7b-14c9-425d-9a3a-f300c3d7fb8d">
+                    <propertyInstance
+                      Id="a6356b68-fa66-42f8-8922-aa52e06c30d9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce982457-7a73-4359-b3ac-0d4855ebc29e">
+                    <propertyInstance
+                      Id="e305e552-7cf0-4517-b613-d068978cdf5c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f831234d-8e2d-49ee-a13d-d2734819cb45"
+                LastKnownName="Button"
+                LastKnownLocation="Package7_2323.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5744e964-7c29-4336-a8e2-24012e382309"
+            name="Page_Load"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8e453280-0005-469f-b01a-9679317a5915"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DPage_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2ab1c94c-938f-4624-9829-21a06c1267a9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0106eda3-60dc-4143-986f-b1b71ab41118">
+                    <propertyInstance
+                      Id="7bb4863c-aeec-4697-af8f-d29dc5f40cd1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75702649-986b-492a-9570-b8da4f3e6c3a">
+                    <propertyInstance
+                      Id="73f53996-1f45-443f-adb9-dcbefff69a60"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2e69ba6-2c23-4965-9347-cd72817d4a97">
+                    <propertyInstance
+                      Id="43e4fb4f-4491-4fe1-b26a-e4adb497403d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a50df3b-47ff-44c1-ab95-79099bd1c9be">
+                    <propertyInstance
+                      Id="f211c327-5e98-4ae0-a152-af63d0b6f162"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ca300ff-a8a3-48d0-a0bd-6dba872b22cc">
+                    <propertyInstance
+                      Id="3e8f49d1-28fb-49f0-ba0e-463d2340764d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba0afd25-439b-4990-8ba9-71ad7c444fda">
+                    <propertyInstance
+                      Id="29c564c2-8a62-4d86-88a3-26a25c5126de"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8729e000-18e2-4f94-a52a-d4f0fd8c8372"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="598b4cca-fa0e-4867-a695-e6eb73bdb3cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DPage_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4e4c63f1-9ac2-4f92-8477-e65d197fd61f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afba9f9f-ef51-47a7-b42a-bc3703d536d8"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="03bfa623-e2ad-4a9d-8cdd-ae2b69328d0a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DPage_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="acdfee6d-45f6-4d83-ae61-ba37c0a77c30"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e1e6790c-bc68-436a-846e-831a44cf985a"
+            name="Accept_Click"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0108b32-fdec-422e-addd-2cf5d867d456"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAccept_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc76cfc9-2ffa-4123-989c-5024afc960a3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="189e6c48-e1c2-4573-90e6-49ec26bc50f5">
+                    <propertyInstance
+                      Id="039cbfce-d1d4-4740-8c65-69d034b91a14"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="874933f2-9087-49cb-8c3a-7035394354fb">
+                    <propertyInstance
+                      Id="075cef72-f515-4dd1-baf2-cbc7692c41f6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0621fd9c-6499-48fc-a7b2-4d1573760863">
+                    <propertyInstance
+                      Id="661047c6-9066-4781-8b24-9029f1722c7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b6d4ea5-8c64-48a8-9dce-f4c9d0d582d0">
+                    <propertyInstance
+                      Id="39bc60a2-be3f-4639-a4a1-b3daa981f252"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55c9d4ac-04a7-4a8f-9dfb-7732dfefe2d7">
+                    <propertyInstance
+                      Id="f83fc560-6dd6-4251-8b60-3110e9f1d212"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95109c1a-4bf0-4f40-a4ef-d1a1396e8edb">
+                    <propertyInstance
+                      Id="c1b255c1-ab45-4873-b67d-7b3ab23c36ee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a76735d-131f-4c73-983d-27e9664d523c"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="761bb03f-1b36-4437-8f5a-c2c02a3dedf3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAccept_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4e4c63f1-9ac2-4f92-8477-e65d197fd61f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0f5d857-820a-41e5-beb2-55f436f55479"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0082aa1d-1bcd-4d63-8451-3fe438ec8394"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAccept_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="acdfee6d-45f6-4d83-ae61-ba37c0a77c30"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="753f9824-2232-4f79-aca4-f3b16a49da86"
+            name="Autofill_Click"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4829001f-c30a-4f2d-a427-2fdff9d0aae3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAutofill_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="953af415-4c4f-4753-a5b3-a5f6d39cddaa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b645515d-1345-4638-9ad4-a3222f013f4c">
+                    <propertyInstance
+                      Id="5045cac3-d6a6-4d91-a977-d17ba259c5ac"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d9a95c-fe4e-4c01-9c9f-42d22cedc5d5">
+                    <propertyInstance
+                      Id="2e325dfe-f8ea-444b-bf08-f75e6d473b2b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="995aefcf-c02f-4b08-925b-64f08000dfba">
+                    <propertyInstance
+                      Id="ea4eecb7-49af-4dfc-8a95-e55ff22abd0f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c47d1e8-a5f3-44b5-9b51-c4290533fead">
+                    <propertyInstance
+                      Id="bd0fd228-f797-4034-807d-43f5c540b95e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e3c5640-17f5-4251-90c3-17e5627d2a81">
+                    <propertyInstance
+                      Id="402bbad6-7aee-4e4b-aa6d-e8d48849af31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="307fa5f3-0ed2-4e92-8cd6-b35e1a06b28a">
+                    <propertyInstance
+                      Id="c63a8ff6-8e50-4e35-8591-2017d1aa248d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ffede90-0915-45e3-8efe-b009878282fe"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2fe6110d-4173-4b16-a037-35d63a98e0cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAutofill_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4e4c63f1-9ac2-4f92-8477-e65d197fd61f"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e356aa85-8a3b-4029-bc56-19de2939852b"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6c346d06-6329-48a1-badd-da5ee5380222"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D(Name%3DAutofill_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="acdfee6d-45f6-4d83-ae61-ba37c0a77c30"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2323.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="373143ae-5e8f-432a-838f-d199e0fd346a"
+            name="Form"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="76daae0b-e07d-4f37-a278-645b4a3667b4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2FFuzzy%2Fbin%2FFuzzy.dll Namespace%3DMGR_site Type%3DForm Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2ec1b194-9575-4cda-978d-73c79ea95f53"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb26b57d-db27-4fe8-b275-acac1afb45ee">
+                    <propertyInstance
+                      Id="c65e1b15-74fc-4419-b3e5-8684d89602fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa7e5c6a-4df3-4172-9af9-206bdd6b9c33">
+                    <propertyInstance
+                      Id="d3f7c5f0-51e4-4601-b879-3fbc5f1bb331"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bdbbd8e-4019-47d8-abca-94044e4fd327">
+                    <propertyInstance
+                      Id="6f479bcc-25bf-417c-a88e-c2ab89371676"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fe5eecf-ac16-46eb-bdd5-890fa39a190b">
+                    <propertyInstance
+                      Id="51480d5d-9d45-4956-9c5f-b770839ccc0b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5a98d48-10d5-4175-98bf-ed5be08b94f8">
+                    <propertyInstance
+                      Id="b1a4fcb4-b7a4-401f-b03a-f3132649cbba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0257b343-4c1d-4c49-af60-400ffe04114e">
+                    <propertyInstance
+                      Id="49bcf7b3-6448-48fb-b300-573b3a806576"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Fuzzy.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - HeartHelp Site</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/content/styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/styles/check-radio.css" rel="stylesheet">
+    <link href="~/content/styles/font-awesome.min.css" rel="stylesheet">
+    <script src="~/scripts/jquery-1.8.2.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/jspdf.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <script type="text/javascript">
+            function changeState(id, state) {
+                document.getElementById(id).disabled = state;
+            }
+
+            function fill() {
+                document.getElementById('Age').value = "25";
+                //document.formularz.Pain[0].checked = true;
+                document.getElementById('BPress').value = "120";
+                document.getElementById('Cholesterol').value = "120";
+                //document.formularz.Smoker[1].checked = true;
+                document.getElementById('CigPerWeek').value = "0";
+                //document.formularz.SugarFam[1].checked = true;
+                document.getElementById('Sugar').value = "90";
+                //document.formularz.RestEKG[0].checked = true;
+                //document.getElementById('MaxHR').value = "190";
+                document.getElementById('RestHR').value = "60";
+                document.getElementById('Fat').value = "50";
+                //document.formularz.Kidney[1].checked = true;
+            }
+
+            function isNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework Scripts--%>
+
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <div class="container">
+                <div class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="float-left">
+                            <p class="site-title">
+                                <a runat="server" href="~/">
+                                    <img src="logo.jpg" width="114" height="91" alt="logo.jpg" />
+                                </a>
+                            </p>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav" id="menu">
+                                <li><a runat="server" href="~/">Strona główna</a></li>
+                                <li><a runat="server" href="~/About">O nas</a></li>
+                                <li><a runat="server" href="~/Contact">Kontakt</a></li>
+                                <li><a runat="server" href="~/Form">Formularz badania</a></li>
+                            </ul>
+                            <%--<section id="login">
+                                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                    <AnonymousTemplate>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a id="registerLink" runat="server" href="~/Account/Register">Zarejestruj</a></li>
+                                            <li><a id="loginLink" runat="server" href="~/Account/Login">Zaloguj</a></li>
+                                        </ul>
+                                    </AnonymousTemplate>
+                                    <LoggedInTemplate>
+                                        <p>
+                                            Hello, <a runat="server" class="username" href="~/Account/Manage" title="Zarządzanie kontem">
+                                                <asp:LoginName runat="server" CssClass="username" />
+                                            </a>!
+                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Wyloguj" LogoutPageUrl="~/" />
+                                        </p>
+                                    </LoggedInTemplate>
+                                </asp:LoginView>
+                            </section>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; <%: DateTime.Now.Year %> - HeartHelp Web Application</p>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2017-10-12T23:25:10" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site' -  (Package)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form' -  (Class)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Accept' -  (Property)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Accept_Click' -  (Operation)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Accept_Click::e' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Accept_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::auto' -  (Property)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Autofill_Click' -  (Operation)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Autofill_Click::e' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Autofill_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Form' -  (Operation)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Page_Load' -  (Operation)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Page_Load::e' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::MGR_site::Form::Page_Load::sender' -  (Parameter)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::EventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web' -  (Package)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::UI' -  (Package)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::UI::Page' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::UI::WebControls' -  (Package)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::UI::WebControls::Button' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::MGR_site::Form to ModelingProject1::System::Web::UI::Page (Generalization)" />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="High" Text="(4) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2017-10-12T23:25:11" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

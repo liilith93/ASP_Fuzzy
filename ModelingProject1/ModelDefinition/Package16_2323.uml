@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="97b31265-7efc-46ab-99b3-13b8c6bc9880"
+  name="OpenAuth"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="50026b9f-110f-4608-a4e1-61ca4f7f5d53"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.AspNet.Membership.OpenAuth"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="5474d935-dece-4e73-837d-5d21da291f1e">
+      <profileInstance
+        Id="21613d3b-da23-4cfd-8876-f6ebb49e5a8d"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="25c0a628-94aa-4d39-b657-5e60b94b1866"
+        name="OpenAuthAccountData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5aa5b5a5-858a-440b-950f-5fb877b284a7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2Fpackages%2FMicrosoft.AspNet.Membership.OpenAuth.1.0.2%2Flib%2Fnet45%2FMicrosoft.AspNet.Membership.OpenAuth.dll Namespace%3DMicrosoft.AspNet.Membership.OpenAuth Type%3DOpenAuthAccountData"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a8a51afa-5eed-4b05-bd67-3df032951c71"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d8ac345-34bf-477a-b4ea-46fb0175913a">
+                <propertyInstance
+                  Id="3c02881e-6c1d-4b69-b0d6-4cd4570437e2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="641a3720-9610-4435-867f-732ce706c43b">
+                <propertyInstance
+                  Id="fab437a6-afa0-4af5-ab18-18b6aaaaa50f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2836019c-cbc2-4b4f-ab8e-eef376981c6d">
+                <propertyInstance
+                  Id="25710714-2524-441c-bb98-dd19331a09e2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d3a15f7-5f55-487c-bf35-603a97b639e6">
+                <propertyInstance
+                  Id="1e9504b2-6f3f-446a-bfb5-055c5a63514e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fb6c8f9-1df2-4c15-998d-ee6de222347f">
+                <propertyInstance
+                  Id="5acf0499-e43f-4351-8b27-934ac80f977a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62cf79c3-c25a-4bae-96e8-ce99ca67a416"
+        name="ProviderDetails"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="27cd2f37-5b28-46bd-8e6c-546a2ba834e0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fmgr_proby%2FFuzzy%2Fpackages%2FMicrosoft.AspNet.Membership.OpenAuth.1.0.2%2Flib%2Fnet45%2FMicrosoft.AspNet.Membership.OpenAuth.dll Namespace%3DMicrosoft.AspNet.Membership.OpenAuth Type%3DProviderDetails"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2df3e71b-2415-4de5-a43b-d8fccc87bd7b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4d4eb3ec-d496-41a9-81aa-8706fe6f5a0e">
+                <propertyInstance
+                  Id="addc66b2-6ef4-4e92-b047-5a217ab3e9f3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ee90284-8206-4952-bb81-96b8492d2b51">
+                <propertyInstance
+                  Id="739c4cea-7ea4-458a-a759-0a0f6eb3c9ed"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef3f58e5-46cb-4d5f-8c10-c4131ee2df06">
+                <propertyInstance
+                  Id="7bb744f7-73be-48aa-8979-60bd433ac87d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ee91bb0-f703-494b-950a-59ed04a95dfe">
+                <propertyInstance
+                  Id="f7ceb793-4ee6-49a4-9d61-6940a547f08d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e54232ec-1e70-4c5d-a0ac-2cbba7ce1231">
+                <propertyInstance
+                  Id="08d7dd09-532d-40f3-b65f-a84a12a71b99"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
