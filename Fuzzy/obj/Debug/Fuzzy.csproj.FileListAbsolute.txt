@@ -33,3 +33,38 @@ D:\mgr_proby\Fuzzy\Fuzzy\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\mgr_proby\Fuzzy\Fuzzy\obj\Debug\Fuzzy.dll
 D:\mgr_proby\Fuzzy\Fuzzy\obj\Debug\Fuzzy.pdb
 D:\mgr_proby\Fuzzy\Fuzzy\obj\Debug\Fuzzy.csprojResolveAssemblyReference.cache
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Fuzzy.dll.config
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Fuzzy.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Fuzzy.pdb
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Antlr3.Runtime.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.Core.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\EntityFramework.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\System.Web.Optimization.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\System.Web.Providers.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\WebGrease.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\EntityFramework.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.Core.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\obj\Debug\Fuzzy.csprojResolveAssemblyReference.cache
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\obj\Debug\Fuzzy.csproj.CoreCompileInputs.cache
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\obj\Debug\Fuzzy.dll
+C:\Users\Tomek\Documents\Visual Studio 2017\HeartRate\Fuzzy\Fuzzy\obj\Debug\Fuzzy.pdb

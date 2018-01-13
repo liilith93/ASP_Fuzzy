@@ -28,28 +28,55 @@ namespace Fuzzy.Account
         {
             using (MD5 md5hash = MD5.Create())
             {
-                string hashPass = HashMD5(md5hash, RegisterUser.Password.Trim());
+                string hashPass = HashMD5(md5hash, RegisterUser.Password.Trim());       // haslo zahashowane
 
+                heartbaseEntities db = new heartbaseEntities();     // zapis parametrow z formularza
+
+                Userss us = new Userss
+                {
+                    Username = RegisterUser.UserName.Trim(),
+                    Password = hashPass,
+                    Email = RegisterUser.Email.Trim(),
+                    //Name = RegisterUser.Name.Trim(),
+                    //Surname = RegisterUser.Surname.Trim()
+                    Name = "name",
+                    Surname = "surname"
+                };
+
+                db.Userss.Add(us);
+                db.SaveChanges();
+
+
+
+                /*
                 int ID = 0;
                 string connStr = ConfigurationManager.ConnectionStrings["DBConnect"].ConnectionString;
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
-                    using (SqlCommand cmd = new SqlCommand("Insert_User"))
+                    using (SqlCommand cmd = new SqlCommand())
                     {
-                        using (SqlDataAdapter sda = new SqlDataAdapter())
-                        {
-                            cmd.CommandType = CommandType.StoredProcedure;
-                            cmd.Parameters.AddWithValue("@Username", RegisterUser.UserName.Trim());
-                            cmd.Parameters.AddWithValue("@Password", hashPass);
-                            cmd.Parameters.AddWithValue("@Email", RegisterUser.Email.Trim());
-                            cmd.Connection = conn;
-                            conn.Open();
-                            ID = Convert.ToInt32(cmd.ExecuteScalar());
-                            conn.Close();
-                        }
+                        //using (SqlDataAdapter sda = new SqlDataAdapter())
+                        //{
+                        //    cmd.CommandType = CommandType.StoredProcedure;
+                        //    cmd.Parameters.AddWithValue("@Username", RegisterUser.UserName.Trim());
+                        //    cmd.Parameters.AddWithValue("@Password", hashPass);
+                        //    cmd.Parameters.AddWithValue("@Email", RegisterUser.Email.Trim());
+                        //    cmd.Connection = conn;
+                        //    conn.Open();
+                        //    ID = Convert.ToInt32(cmd.ExecuteScalar());
+                        //    conn.Close();
+                        //}
+
+                        cmd.CommandText = "select * from Userss";
+                        cmd.Connection = conn;
+                        cmd.CommandType = CommandType.TableDirect
+
+
+
                     }
                     SendActivationEmail(ID);
                 }
+                */
             }
         }
 

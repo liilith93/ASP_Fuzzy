@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c807f86dbad4001a46620a3910d9ff1" Name="Diagram1">
+        <EntityTypeShape EntityType="heartbaseModel.Applications" Width="1.5" PointX="0.75" PointY="4.5" />
+        <EntityTypeShape EntityType="heartbaseModel.Memberships" Width="1.5" PointX="3" PointY="3" />
+        <EntityTypeShape EntityType="heartbaseModel.Profiles" Width="1.5" PointX="7.5" PointY="7.375" />
+        <EntityTypeShape EntityType="heartbaseModel.Results" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="heartbaseModel.Roles" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="heartbaseModel.Users" Width="1.5" PointX="5.25" PointY="7" />
+        <EntityTypeShape EntityType="heartbaseModel.Users_results" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="heartbaseModel.Userss" Width="1.5" PointX="7.75" PointY="3.75" />
+        <AssociationConnector Association="heartbaseModel.MembershipApplication" />
+        <AssociationConnector Association="heartbaseModel.RoleApplication" />
+        <AssociationConnector Association="heartbaseModel.UserApplication" />
+        <AssociationConnector Association="heartbaseModel.MembershipUser" />
+        <AssociationConnector Association="heartbaseModel.UserProfile" />
+        <AssociationConnector Association="heartbaseModel.UsersInRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

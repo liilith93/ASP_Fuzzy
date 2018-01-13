@@ -39,6 +39,34 @@
                 //document.formularz.Kidney[1].checked = true;
             }
 
+            function fillValues(name, surname, sex, age, pain, bpress, chol, smoker, cigperweek, sugar, sugarfam, restekg, resthr, fat, kidney) {
+                document.getElementById('Name').value = name;
+                document.getElementById('Surname').value = surname;
+
+                document.getElementById('Age').value = age;
+                //document.formularz.Pain[0].checked = true;
+                document.getElementById('BPress').value = bpress;
+                document.getElementById('Cholesterol').value = chol;
+                //document.formularz.Smoker[1].checked = true;
+                document.getElementById('CigPerWeek').value = cigperweek;
+                //document.formularz.SugarFam[1].checked = true;
+                document.getElementById('Sugar').value = sugar;
+                //document.formularz.RestEKG[0].checked = true;
+                //document.getElementById('MaxHR').value = "190";
+                document.getElementById('RestHR').value = resthr;
+                document.getElementById('Fat').value = fat;
+                //document.formularz.Kidney[1].checked = true;
+
+                document.getElementById('Smoker').value = smoker;
+                document.getElementById('Sex').value = sex;
+                document.getElementById('Surname').value = surname;
+                document.getElementById('Pain').value = pain;
+                document.getElementById('SugarFam').value = sugarfam;
+                document.getElementById('restEkg').value = restekg;
+                document.getElementById('Kidney').value = kidney;
+            }
+
+
             function isNumber(evt) {
                 evt = (evt) ? evt : window.event;
                 var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -88,8 +116,9 @@
                                 <li><a runat="server" href="~/About">O nas</a></li>
                                 <li><a runat="server" href="~/Contact">Kontakt</a></li>
                                 <li><a runat="server" href="~/Form">Formularz badania</a></li>
+                               
                             </ul>
-                            <%--<section id="login">
+                           <section id="login">
                                 <asp:LoginView runat="server" ViewStateMode="Disabled">
                                     <AnonymousTemplate>
                                         <ul class="nav navbar-nav navbar-right">
@@ -99,14 +128,14 @@
                                     </AnonymousTemplate>
                                     <LoggedInTemplate>
                                         <p>
-                                            Hello, <a runat="server" class="username" href="~/Account/Manage" title="Zarządzanie kontem">
+                                            Witaj, <a runat="server" class="username" href="~/Account/Manage" title="Zarządzanie kontem">
                                                 <asp:LoginName runat="server" CssClass="username" />
                                             </a>!
                                 <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Wyloguj" LogoutPageUrl="~/" />
                                         </p>
                                     </LoggedInTemplate>
                                 </asp:LoginView>
-                            </section>--%>
+                            </section>
                         </div>
                     </div>
                 </div>

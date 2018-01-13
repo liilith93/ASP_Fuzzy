@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Fuzzy.Account
-{
-
-
-    public partial class Manage
-    {
-
+namespace Fuzzy.Account {
+    
+    
+    public partial class Manage {
+        
         /// <summary>
         /// successMessage control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Fuzzy.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder successMessage;
-
+        
         /// <summary>
         /// setPassword control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Fuzzy.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder setPassword;
-
+        
         /// <summary>
         /// password control.
         /// </summary>
@@ -40,9 +38,7 @@ namespace Fuzzy.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
-
-
-
+        
         /// <summary>
         /// confirmPassword control.
         /// </summary>
@@ -51,7 +47,7 @@ namespace Fuzzy.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox confirmPassword;
-
+        
         /// <summary>
         /// changePassword control.
         /// </summary>
@@ -60,7 +56,23 @@ namespace Fuzzy.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder changePassword;
-
-
+        
+        /// <summary>
+        /// EntityDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinqDataSource EntityDataSource;
+        
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView GridView1;
     }
 }

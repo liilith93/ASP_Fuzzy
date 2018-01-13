@@ -47,7 +47,32 @@ namespace Fuzzy.Account
             using (MD5 md5Hash = MD5.Create())
             {
                 string hashPass = HashMD5(md5Hash, loginForm1.Password);
+                
+                heartbaseEntities db = new heartbaseEntities();
 
+                string Username = loginForm1.UserName.Trim();
+                string Password = hashPass;              
+
+                var userss =  db.Userss.Where(x => x.Username == Username);
+                Userss[] user = userss.ToArray();
+                if (user.Length>0)
+                {
+                    if(user[0].Password == Password)
+                    {
+                        FormsAuthentication.RedirectFromLoginPage(loginForm1.UserName, loginForm1.RememberMeSet);
+                    }
+                    else
+                    {
+                        loginForm1.FailureText = "Username and/or password is incorrect.";
+                    }
+                }
+                else
+                {
+                    loginForm1.FailureText = "Username and/or password is incorrect.";
+                }
+
+                
+                /*
                 int ID = 0;
                 string constr = ConfigurationManager.ConnectionStrings["DBConnect"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(constr))
@@ -75,6 +100,7 @@ namespace Fuzzy.Account
                             break;
                     }
                 }
+                */
             }
         }
     }

@@ -31,6 +31,18 @@
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
                                     CssClass="field-validation-error" ErrorMessage="The user name field is required." />
                             </li>
+                            <%--<li>
+                                <asp:Label runat="server" AssociatedControlID="Name">Name</asp:Label>
+                                <asp:TextBox runat="server" ID="Name" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
+                                    CssClass="field-validation-error" ErrorMessage="The name field is required." />
+                            </li>
+                            <li>
+                                <asp:Label runat="server" AssociatedControlID="Surname">Surname</asp:Label>
+                                <asp:TextBox runat="server" ID="Surname" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
+                                    CssClass="field-validation-error" ErrorMessage="The Surname field is required." />
+                            </li>--%>
                             <li>
                                 <asp:Label runat="server" AssociatedControlID="Email">Email address</asp:Label>
                                 <asp:TextBox runat="server" ID="Email" TextMode="Email" />

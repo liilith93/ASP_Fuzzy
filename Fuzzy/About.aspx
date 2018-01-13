@@ -12,7 +12,7 @@
             Tematyka pracy obejmowała ocenę ryzyka zachorowania na choroby serca, w tym celu został wykorzystany system rozmyty, 
             którego wejścia oraz reguły zostały dobrane po dokładnej analizie literatury.<br />
 <%--            Dodatkową funkcjonalnością udostępnioną użytkownikowi jest możliwość prowadzenia historii, dzięki czemu możliwe jest 
-            śledzenie istotnych czynników ryzyka.--%>
+            śledzenie istotnych czynników ryzykahhhhhhhh.--%>
         </p>
 
 <%--        <p>        
