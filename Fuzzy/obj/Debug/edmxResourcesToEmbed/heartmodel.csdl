@@ -33,6 +33,7 @@
       <End Role="Roles" EntitySet="Roles" />
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>
+    <EntitySet Name="View" EntityType="heartbaseModel.View" />
   </EntityContainer>
   <EntityType Name="Applications">
     <Key>
@@ -213,4 +214,13 @@
     <End Type="heartbaseModel.Roles" Role="Roles" Multiplicity="*" />
     <End Type="heartbaseModel.Users" Role="Users" Multiplicity="*" />
   </Association>
+  <EntityType Name="View">
+    <Key>
+      <PropertyRef Name="Numer" />
+      <PropertyRef Name="uzytkownik" />
+    </Key>
+    <Property Name="Numer" Type="Int32" Nullable="false" />
+    <Property Name="Wynik" Type="Double" />
+    <Property Name="uzytkownik" Type="Int32" Nullable="false" />
+  </EntityType>
 </Schema>

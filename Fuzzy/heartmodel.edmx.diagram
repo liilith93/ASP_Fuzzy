@@ -19,6 +19,7 @@
         <AssociationConnector Association="heartbaseModel.MembershipUser" />
         <AssociationConnector Association="heartbaseModel.UserProfile" />
         <AssociationConnector Association="heartbaseModel.UsersInRoles" />
+        <EntityTypeShape EntityType="heartbaseModel.View" Width="1.5" PointX="10.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

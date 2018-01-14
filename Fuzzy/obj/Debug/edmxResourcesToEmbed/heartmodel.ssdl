@@ -111,6 +111,17 @@
     <Property Name="Surname" Type="nchar" MaxLength="20" Nullable="false" />
     <Property Name="Email" Type="nchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\TOMEK\DOCUMENTS\VISUAL STUDIO 2017\HEARTRATE\FUZZY\FUZZY\APP_DATA\HEARTBASE.MDF.dbo.View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View">
+    <Key>
+      <PropertyRef Name="Numer" />
+      <PropertyRef Name="uzytkownik" />
+    </Key>
+    <Property Name="Numer" Type="int" Nullable="false" />
+    <Property Name="Wynik" Type="float" />
+    <Property Name="uzytkownik" Type="int" Nullable="false" />
+  </EntityType>
   <Association Name="MembershipApplication">
     <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
     <End Role="Memberships" Type="Self.Memberships" Multiplicity="*" />
@@ -205,6 +216,13 @@
     <EntitySet Name="Users_results" EntityType="Self.Users_results" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UsersInRoles" EntityType="Self.UsersInRoles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Userss" EntityType="Self.Userss" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="View" EntityType="Self.View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[View].[Numer] AS [Numer], 
+[View].[Wynik] AS [Wynik], 
+[View].[uzytkownik] AS [uzytkownik]
+FROM [dbo].[View] AS [View]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="MembershipApplication" Association="Self.MembershipApplication">
       <End Role="Applications" EntitySet="Applications" />
       <End Role="Memberships" EntitySet="Memberships" />

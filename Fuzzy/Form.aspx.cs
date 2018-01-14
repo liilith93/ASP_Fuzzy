@@ -152,43 +152,31 @@ namespace MGR_site
                     int idUser = user[0].Id;            // to pobieramy jego id
 
                     // TODO zabezpieczyc przed brakiem elementow w Users_Results
-                    var maxx = db.Users_results.Where(x => x.Id_user == idUser).ToList().Last();
-                    var res = db.Results.Where(x => x.Id == maxx.Id_result).ToList().Last();      // i pobieramy id wlasnie dodanego rekordu result
 
-                    //assignFieldValue("Name", res.Name);
-                    //assignFieldValue("Surname", res.Surname);
-                    //assignFieldValue("Sex", res.Sex.ToString());
-                    //assignFieldValue("Age", res.Age.ToString());
-                    //assignFieldValue("Pain", res.Pain.ToString());
-                    //assignFieldValue("BPress", res.BPress.ToString());
-                    //assignFieldValue("Cholesterol", res.Cholesterol.ToString());
-                    //assignFieldValue("Smoker", res.Smoker.ToString());
-                    //assignFieldValue("CigPerWeek", res.CigPerWeek.ToString());
-                    //assignFieldValue("Sugar", res.Sugar.ToString());
-                    //assignFieldValue("SugarFam", res.SugarFam.ToString());
-                    //assignFieldValue("restEKG", res.restEKG.ToString());
-                    //assignFieldValue("RestHR", res.RestHR.ToString());
-                    //assignFieldValue("Fat", res.Fat.ToString());
-                    //assignFieldValue("Kidney", res.Kidney.ToString());
+                    if (db.Users_results.Where(x => x.Id_user == idUser).Any())
+                    {
 
-                    //fillValues(name, surname, sex, age, pain, bpress, chol, smoker, cigperweek, sugar, sugarfam, restekg, resthr, fat, kidney)
-                    ClientScript.RegisterStartupScript(GetType(), "hwa", "fillValues("
-                        + "\"" + res.Name + "\", "
-                        + "\"" + res.Surname + "\", "
-                        + "\"" + res.Sex + "\", "
-                        + "\"" + res.Age + "\", "
-                        + "\"" + res.Pain + "\", "
-                        + "\"" + res.BPress + "\", "
-                        + "\"" + res.Cholesterol + "\", "
-                        + "\"" + res.Smoker + "\", "
-                        + "\"" + res.CigPerWeek + "\", "
-                        + "\"" + res.Sugar + "\", "
-                        + "\"" + res.SugarFam + "\", "
-                        + "\"" + res.restEKG + "\", "
-                        + "\"" + res.RestHR + "\", "
-                        + "\"" + res.Fat + "\", "
-                        + "\"" + res.Kidney + "\", "
-                        + ");", true);
+                        var maxx = db.Users_results.Where(x => x.Id_user == idUser).ToList().Last();
+                        var res = db.Results.Where(x => x.Id == maxx.Id_result).ToList().Last();      // i pobieramy id wlasnie dodanego rekordu result
+
+                       ClientScript.RegisterStartupScript(GetType(), "hwa", "fillValues("
+                            + "\"" + res.Name + "\", "
+                            + "\"" + res.Surname + "\", "
+                            + "\"" + res.Sex + "\", "
+                            + "\"" + res.Age + "\", "
+                            + "\"" + res.Pain + "\", "
+                            + "\"" + res.BPress + "\", "
+                            + "\"" + res.Cholesterol + "\", "
+                            + "\"" + res.Smoker + "\", "
+                            + "\"" + res.CigPerWeek + "\", "
+                            + "\"" + res.Sugar + "\", "
+                            + "\"" + res.SugarFam + "\", "
+                            + "\"" + res.restEKG + "\", "
+                            + "\"" + res.RestHR + "\", "
+                            + "\"" + res.Fat + "\", "
+                            + "\"" + res.Kidney + "\", "
+                            + ");", true);
+                    }
                 }
             }
             else

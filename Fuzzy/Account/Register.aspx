@@ -1,9 +1,9 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Fuzzy.Account.Register" %>
+﻿<%@ Page Title="Zarejestruj się" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Fuzzy.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
         <h1><%: Title %>.</h1>
-        <h2>Use the form below to create a new account.</h2>
+        <h2>Wprowadź poniżej dane, aby się zarejestrować.</h2>
     </hgroup>
 
     <asp:CreateUserWizard runat="server" ID="RegisterUser" ViewStateMode="Disabled" OnCreatedUser="RegisterUser_CreatedUser">
@@ -15,7 +15,7 @@
             <asp:CreateUserWizardStep runat="server" ID="RegisterUserWizardStep">
                 <ContentTemplate>
                     <p class="message-info">
-                        Passwords are required to be a minimum of <%: Membership.MinRequiredPasswordLength %> characters in length.
+                        Hasło musi być złożone z <%: Membership.MinRequiredPasswordLength %> znaków.
                     </p>
 
                     <p class="validation-summary-errors">
@@ -26,45 +26,45 @@
                         <legend>Registration Form</legend>
                         <ol>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="UserName">Login</asp:Label>
                                 <asp:TextBox runat="server" ID="UserName" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                                    CssClass="field-validation-error" ErrorMessage="The user name field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
-                            <%--<li>
-                                <asp:Label runat="server" AssociatedControlID="Name">Name</asp:Label>
+                            <li>
+                                <asp:Label runat="server" AssociatedControlID="Name">Imię</asp:Label>
                                 <asp:TextBox runat="server" ID="Name" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
-                                    CssClass="field-validation-error" ErrorMessage="The name field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="Surname">Surname</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="Surname">Nazwisko</asp:Label>
                                 <asp:TextBox runat="server" ID="Surname" />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                                    CssClass="field-validation-error" ErrorMessage="The Surname field is required." />
-                            </li>--%>
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
+                                    CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
+                            </li>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="Email">Email address</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="Email">Email </asp:Label>
                                 <asp:TextBox runat="server" ID="Email" TextMode="Email" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                    CssClass="field-validation-error" ErrorMessage="The email address field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="Password">Hasło</asp:Label>
                                 <asp:TextBox runat="server" ID="Password" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                                    CssClass="field-validation-error" ErrorMessage="The password field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Confirm password</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Potwierdź hasło</asp:Label>
                                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The confirm password field is required." />
+                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Pole jest wymagane." />
                                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Hasła nie zgadzają się." />
                             </li>
                         </ol>
-                        <asp:Button runat="server" CommandName="MoveNext" Text="Register" />
+                        <asp:Button runat="server" CommandName="MoveNext" Text="Zarejestruj" />
                     </fieldset>
                 </ContentTemplate>
                 <CustomNavigationTemplate />

@@ -11,74 +11,42 @@
             <p class="message-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
 
-        <p>You're logged in as <strong><%: User.Identity.Name %></strong>.</p>
+        <p>Zalogowano jako <strong><%: User.Identity.Name %></strong>.</p>
 
-        <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
-            <p>
-                You do not have a local password for this site. Add a local
-                password so you can log in without an external login.
-            </p>
-            <fieldset>
-                <legend>Set Password Form</legend>
-                <ol>
-                    <li>
-                        <asp:Label runat="server" AssociatedControlID="password">Password</asp:Label>
-                        <asp:TextBox runat="server" ID="password" TextMode="Password" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="password"
-                            CssClass="field-validation-error" ErrorMessage="The password field is required."
-                            Display="Dynamic" ValidationGroup="SetPassword" />
-                        
-                        <asp:ModelErrorMessage runat="server" ModelStateKey="NewPassword" AssociatedControlID="password"
-                            CssClass="field-validation-error" SetFocusOnError="true" />
-                        
-                    </li>
-                    <li>
-                        <asp:Label runat="server" AssociatedControlID="confirmPassword">Confirm password</asp:Label>
-                        <asp:TextBox runat="server" ID="confirmPassword" TextMode="Password" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="confirmPassword"
-                            CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The confirm password field is required."
-                            ValidationGroup="SetPassword" />
-                        <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="confirmPassword"
-                            CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The password and confirmation password do not match."
-                            ValidationGroup="SetPassword" />
-                    </li>
-                </ol>
-                <asp:Button runat="server" Text="Set Password" ValidationGroup="SetPassword" OnClick="setPassword_Click" />
-            </fieldset>
-        </asp:PlaceHolder>
-
+       
+      
         <asp:PlaceHolder runat="server" ID="changePassword" Visible="false">
-            <h3>Change password</h3>
+            <h3>Zmień hasło </h3>
             <asp:ChangePassword runat="server" CancelDestinationPageUrl="~/" ViewStateMode="Disabled" RenderOuterTable="false" SuccessPageUrl="Manage?m=ChangePwdSuccess">
                 <ChangePasswordTemplate>
                     <p class="validation-summary-errors">
                         <asp:Literal runat="server" ID="FailureText" />
                     </p>
                     <fieldset class="changePassword">
-                        <legend>Change password details</legend>
+                        <legend>Zmień hasło</legend>
                         <ol>
                             <li>
-                                <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword">Current password</asp:Label>
+                                <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword">Obecne hasło</asp:Label>
                                 <asp:TextBox runat="server" ID="CurrentPassword" CssClass="passwordEntry" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="CurrentPassword"
-                                    CssClass="field-validation-error" ErrorMessage="The current password field is required."
+                                    CssClass="field-validation-error" ErrorMessage="Obecne hasło jest wymagane."
                                     ValidationGroup="ChangePassword" />
                             </li>
                             <li>
-                                <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword">New password</asp:Label>
+                                <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword">Nowe hasło</asp:Label>
                                 <asp:TextBox runat="server" ID="NewPassword" CssClass="passwordEntry" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="NewPassword"
-                                    CssClass="field-validation-error" ErrorMessage="The new password is required."
+                                    CssClass="field-validation-error" ErrorMessage="Nowe hasło jest wymagane."
                                     ValidationGroup="ChangePassword" />
                             </li>
                             <li>
-                                <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword">Confirm new password</asp:Label>
+                                <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword">Potwierdź nowe hasło</asp:Label>
                                 <asp:TextBox runat="server" ID="ConfirmNewPassword" CssClass="passwordEntry" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmNewPassword"
-                                    CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Confirm new password is required."
+                                    CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Nowe hasło jest wymagane."
                                     ValidationGroup="ChangePassword" />
                                 <asp:CompareValidator runat="server" ControlToCompare="NewPassword" ControlToValidate="ConfirmNewPassword"
-                                    CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The new password and confirmation password do not match."
+                                    CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Nowe hasło i potwierdzone nie są zgodne"
                                     ValidationGroup="ChangePassword" />
                             </li>
                         </ol>
@@ -89,7 +57,21 @@
         </asp:PlaceHolder>
     </section>
 
-    <asp:LinqDataSource 
+     <p>Twoje wyniki:</p>
+
+     <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" CellPadding="4" CellSpacing="5" Height="20px">
+        <FooterStyle BackColor="#99CCCC" ForeColor="#003399" BorderColor="Black" BorderWidth="1" BorderStyle="Solid"/>
+        <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" BorderColor="Black" BorderWidth="1" BorderStyle="Solid"/>
+        <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" BorderColor="Black" BorderStyle="Solid" />
+        <RowStyle BackColor="White" ForeColor="#003399" BorderColor="Black" BorderWidth="1" BorderStyle="Solid" />
+        <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" BorderWidth="1" BorderStyle="Solid" />
+        <SortedAscendingCellStyle BackColor="#EDF6F6" BorderWidth="1" BorderColor="Black" BorderStyle="Solid" />
+        <SortedAscendingHeaderStyle BackColor="#0D4AC4"  BorderColor="Black" BorderStyle="Solid" />
+        <SortedDescendingCellStyle BackColor="#D6DFDF"  BorderColor="Black" BorderStyle="Solid" />
+        <SortedDescendingHeaderStyle BackColor="#002876"  BorderColor="Black" BorderStyle="Solid" />
+    </asp:GridView>
+
+   <%-- <asp:LinqDataSource 
     ContextTypeName="heartbaseEntities" 
     TableName="Users" 
     EnableUpdate="true"
@@ -107,7 +89,7 @@
     DataSourceID="EntityDataSource"
     ID="GridView1" 
     runat="server">
-</asp:DetailsView>
+</asp:DetailsView>--%>
 
     <!--
     <section id="externalLoginsForm">

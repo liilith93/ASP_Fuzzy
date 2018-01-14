@@ -23,36 +23,70 @@ namespace Fuzzy.Account
 
         protected void Page_Load()
         {
-            
+           
 
-            if (!IsPostBack  )
+            heartbaseEntities db = new heartbaseEntities();     // przygotowanie do zapisu do bazy do tabeli Results
+
+
+            string login = User.Identity.Name;              // wyciaganie aktualnie zalogowanego uzytkownika
+
+            var userss = db.Userss.Where(x => x.Username == login);     // to jest login! potrzebujemy id
+            Userss[] user = userss.ToArray();
+
+            List<Users_results> ur = null;
+            List<Results> r = new List<Results>();
+
+            if (user.Length > 0)        // wiec jesli znajdziemy jakiegos uzytkownika
             {
-                // Determine the sections to render
-                var hasLocalPassword = User.Identity.IsAuthenticated;
-                setPassword.Visible = !hasLocalPassword;
-                changePassword.Visible = hasLocalPassword;
+                int idUser = user[0].Id;            // to pobieramy jego id
 
-                CanRemoveExternalLogins = hasLocalPassword;
+                var resul = db.Users_results.Where(x => x.Id_user == idUser);
 
-                // Render success message
-                var message = Request.QueryString["m"];
-                if (message != null)
+                foreach (Users_results userresult in resul.ToList())
                 {
-                    // Strip the query string from action
-                    Form.Action = ResolveUrl("~/Account/Manage");
-
-                    SuccessMessage =
-                        message == "ChangePwdSuccess" ? "Your password has been changed."
-                        : message == "SetPwdSuccess" ? "Your password has been set."
-                        : message == "RemoveLoginSuccess" ? "The external login was removed."
-                        : String.Empty;
-                    successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
+                    var resul2 = db.Results.Where(x => x.Id == userresult.Id_result);
+                    Results[] result = resul2.ToArray();
+                    if (result.Length > 0)
+                    {
+                        r.Add(result[0]);
+                    }
                 }
             }
-            
+
+
+
+            GridView1.DataSource = r;
+            GridView1.DataBind();
+
+
+            //if (!IsPostBack  )
+            //{
+            //    // Determine the sections to render
+            //    var hasLocalPassword = User.Identity.IsAuthenticated;
+            //   // setPassword.Visible = !hasLocalPassword;
+            //    changePassword.Visible = hasLocalPassword;
+
+            //    CanRemoveExternalLogins = hasLocalPassword;
+
+            //    // Render success message
+            //    var message = Request.QueryString["m"];
+            //    if (message != null)
+            //    {
+            //        // Strip the query string from action
+            //        Form.Action = ResolveUrl("~/Account/Manage");
+
+            //        SuccessMessage =
+            //            message == "ChangePwdSuccess" ? "Your password has been changed."
+            //            : message == "SetPwdSuccess" ? "Your password has been set."
+            //            : message == "RemoveLoginSuccess" ? "The external login was removed."
+            //            : String.Empty;
+            //        successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
+            //    }
+            //}
+
         }
 
-        
+
         protected void setPassword_Click(object sender, EventArgs e)
         {
             if (IsValid)

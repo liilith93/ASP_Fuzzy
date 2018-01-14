@@ -120,5 +120,14 @@
         <ScalarProperty Name="RoleId" ColumnName="RoleId" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="View">
+      <EntityTypeMapping TypeName="heartbaseModel.View">
+        <MappingFragment StoreEntitySet="View">
+          <ScalarProperty Name="uzytkownik" ColumnName="uzytkownik" />
+          <ScalarProperty Name="Wynik" ColumnName="Wynik" />
+          <ScalarProperty Name="Numer" ColumnName="Numer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -480,6 +480,9 @@
     <Compile Include="Users_results.cs">
       <DependentUpon>heartmodel.tt</DependentUpon>
     </Compile>
+    <Compile Include="View.cs">
+      <DependentUpon>heartmodel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
