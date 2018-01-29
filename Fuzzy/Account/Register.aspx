@@ -24,6 +24,7 @@
 
                     <fieldset>
                         <legend>Registration Form</legend>
+                        <form>
                         <ol>
                             <li>
                                 <asp:Label runat="server" AssociatedControlID="UserName">Login</asp:Label>
@@ -33,14 +34,14 @@
                             </li>
                             <li>
                                 <asp:Label runat="server" AssociatedControlID="Name">Imię</asp:Label>
-                                <asp:TextBox runat="server" ID="Name" />
+                                <asp:TextBox runat="server"  name="Name" ID="Name" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
                                     CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
                             <li>
                                 <asp:Label runat="server" AssociatedControlID="Surname">Nazwisko</asp:Label>
-                                <asp:TextBox runat="server" ID="Surname" />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
+                                <asp:TextBox runat="server" name="Surname" ID="Surname" />
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Surname"
                                     CssClass="field-validation-error" ErrorMessage="Pole jest wymagane." />
                             </li>
                             <li>
@@ -64,6 +65,7 @@
                                      CssClass="field-validation-error" Display="Dynamic" ErrorMessage="Hasła nie zgadzają się." />
                             </li>
                         </ol>
+                            </form>
                         <asp:Button runat="server" CommandName="MoveNext" Text="Zarejestruj" />
                     </fieldset>
                 </ContentTemplate>

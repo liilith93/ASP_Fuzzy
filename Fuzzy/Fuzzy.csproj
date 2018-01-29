@@ -140,6 +140,10 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\WebForm1.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\heartbase.mdf" />
     <Content Include="App_Data\heartbase_log.ldf">
       <DependentUpon>heartbase.mdf</DependentUpon>

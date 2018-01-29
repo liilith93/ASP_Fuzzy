@@ -16,7 +16,24 @@ namespace MGR_site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Console.WriteLine(User.Identity.);
+            if (User.Identity.IsAuthenticated)
+            {
+                heartbaseEntities db = new heartbaseEntities();     // przygotowanie do zapisu do bazy do tabeli Results
+
+                string login = User.Identity.Name;              // wyciaganie aktualnie zalogowanego uzytkownika
+                var userss = db.Userss.Where(x => x.Username == login);     // to jest login! potrzebujemy id
+                Userss[] user = userss.ToArray();
+                if (user.Length > 0)        // wiec jesli znajdziemy jakiegos uzytkownika
+                {
+                    int idUser = user[0].Id;            // to pobieramy jego id
+                    
+                             ClientScript.RegisterStartupScript(GetType(), "hwa", "fillValues("
+                             + "\"" + user[0].Name + "\", "
+                             + "\"" + user[0].Surname + "\", "
+                             + ");", true);
+                    
+                }
+            }
         }
 
         protected void Accept_Click(object sender, EventArgs e)

@@ -31,16 +31,17 @@ namespace Fuzzy.Account
                 string hashPass = HashMD5(md5hash, RegisterUser.Password.Trim());       // haslo zahashowane
 
                 heartbaseEntities db = new heartbaseEntities();     // zapis parametrow z formularza
-
+               // string name = Request.Form[6];
+                
                 Userss us = new Userss
                 {
                     Username = RegisterUser.UserName.Trim(),
                     Password = hashPass,
                     Email = RegisterUser.Email.Trim(),
-                    //Name = RegisterUser.Name.Trim(),
-                    //Surname = RegisterUser.Surname.Trim()
-                    Name = "name",
-                    Surname = "surname"
+                    Name = Request.Form[6].ToString(), //RegisterUser.Name.Trim(),
+                    Surname = Request.Form[7].ToString()
+                    //Name = "name",
+                    //Surname = "surname"
                 };
 
                 db.Userss.Add(us);
